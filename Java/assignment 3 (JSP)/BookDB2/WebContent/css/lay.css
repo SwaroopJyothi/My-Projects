@@ -1,0 +1,29 @@
+body {
+   background-image: url('back.jpg');
+   overflow: hidden;
+}
+div#header {
+background-color: #3e3436;
+height: 60px;
+}
+
+div#main iframe {
+	border: solid 2px #151515;
+    position: absolute;
+    bottom: 0;
+    left: 100px;
+    right: 0px;
+    height: 100%;
+    width: 100%;
+     overflow-y: scroll;
+}
+div#sidebar {
+background-color: #0FF;
+width: 80px;
+position: absolute;
+top: 110px;
+min-height: 300px;
+}
+div#footer {
+border: 2px solid red;
+}

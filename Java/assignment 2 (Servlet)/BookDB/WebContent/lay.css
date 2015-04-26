@@ -1,0 +1,26 @@
+div#header {
+background-color: #3e3436;
+height: 60px;
+}
+
+div#main iframe {
+	border: solid 2px #3e3436;
+    position: absolute;
+    top: 80px;
+    bottom: 0;
+    left: 10px;
+    right: 0;
+    height: 100%;
+    width: 99%;
+     overflow:hidden;
+}
+div#sidebar {
+background-color: #0FF;
+width: 80px;
+position: absolute;
+top: 110px;
+min-height: 300px;
+}
+div#footer {
+border: 2px solid red;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="lay.css" title="style" media="screen"/>
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ek+Mukta">
+<link rel="stylesheet" href="layo.css" />
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="application/javascript" src="http://jsonip.appspot.com/?callback=getip"></script>
+
+ </head>
+
+	
+	<body >
+		<div id = "header" >
+		<nav class="menu">
+        <ul class="clearfix">
+            <li class="selected" ><a href="Homepage"  target="iframe" style="text-decoration: none">Home</a></li>
+            <li>
+                <a href="#" style="text-decoration: none">Show Tables <span class="arrow">&#9660;</span></a>
+ 
+                <ul class="sub-menu">
+                    <li><a href="Tables?table=Authors" target="iframe" style="text-decoration: none">Authors</a></li>
+                    <li><a href="Tables?table=Titles" target="iframe" style="text-decoration: none">Titles</a></li>
+                </ul>
+            </li>
+            <li><a href="insert.html" target="iframe" style="text-decoration: none">Insert</a>
+			</li>
+            <li ><a href="ViewDB" target="iframe" style="text-decoration: none">View All</a></li>
+            <li ><a href="search.html" target="iframe" style="text-decoration: none">Search</a></li>
+            
+            <li ><a href="/BookDB/Logout" style="text-decoration: none">Logout</a></li>
+        </ul>
+    </nav>
+		</div>
+		
+		<div id = "main" >
+		
+<iframe src="Homepage" id="myIframe" name="iframe"/></iframe>
+
+		</div>
+	
+		
+	
+	</body>
+</html>
