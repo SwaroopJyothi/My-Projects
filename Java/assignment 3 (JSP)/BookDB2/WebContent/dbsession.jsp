@@ -8,25 +8,24 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<%
-%>
 </head>
 <body>
+        <jsp:useBean id="mybean" scope="session" class="db.ConnectionBean" />
+        <jsp:setProperty name="mybean" property="username" />
+        <jsp:setProperty name="mybean" property="password"/>
 <%
 String uname="";
 String pass="";
 session = request.getSession();
 SessionConnection sessionConnection = (SessionConnection) session.getAttribute("sessionconnection");
 Connection connection = null;
-
 if (sessionConnection != null) {
       connection = sessionConnection.getConnection();
     }
 if(connection==null){
-	 uname=request.getParameter("uname");
-	pass=request.getParameter("password");
-	DbConnect obj=new DbConnect(uname, pass);
-	connection=obj.login();
+	uname=mybean.getUsername();
+	 pass = mybean.getPassword();
+	connection = mybean.dbConnect();
 	if (connection != null) {
           // store the connection
 		session.setAttribute("uname",uname );
@@ -38,7 +37,7 @@ if(connection==null){
           return;
         }
 	else{
-		response.sendRedirect("index.html");
+		response.sendRedirect("index.jsp");
 	}
 }
 

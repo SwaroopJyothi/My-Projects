@@ -21,7 +21,7 @@ if (sessionConnection != null) {
 	connection = sessionConnection.getConnection();
 
 	session.removeAttribute("sessionconnection");
-	response.sendRedirect("index.html");
+	response.sendRedirect("index.jsp");
 }
 
 

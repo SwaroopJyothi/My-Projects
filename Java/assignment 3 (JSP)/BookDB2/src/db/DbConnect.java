@@ -31,7 +31,7 @@ public class DbConnect {
 			
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
-			conn1=DriverManager.getConnection("jdbc:mysql://cs99.bradley.edu:3306/"+user, user, pass);
+			conn1=DriverManager.getConnection("jdbc:mysql://localhost:3306/"+user, user, pass);
 			}catch(Exception e){}
 		
 		return conn1;
